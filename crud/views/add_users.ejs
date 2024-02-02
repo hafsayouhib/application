@@ -1,0 +1,40 @@
+
+<%- include('layouts/header') %>
+<style>
+    .form-container {
+    width: 50%; /* Adjust the width as per your requirement */
+    margin: 0 auto; /* This will horizontally center the form */
+    padding: 20px;
+    border: 1px solid #ccc; /* Just for visualization */
+    border-radius: 5px; /* Optional: Rounded corners for visual appeal */
+}
+
+</style>
+<div class="form-container">
+<form action="/add" method ="post" id ="add-form" enctype="multipart/form-data">
+    
+    <div class="form-group">
+        <label for="formGroupExampleInput">Name</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="formGroupExampleInput">phone</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="custom-file">
+        <input type="file" class="file" id="file" name="image">
+        <label  for="image">Choose file</label>
+      </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary" value ="Add User">Submit</button>
+  </form>
+  </div>
+<%- include('layouts/footer') %>

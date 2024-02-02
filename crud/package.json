@@ -1,0 +1,25 @@
+{
+  "name": "crud-app",
+  "version": "1.0.0",
+  "description": "creat read update delete application",
+  "main": "index.js",
+  "scripts": {
+    "hafsa": "nodemon index.js"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "maheen",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.1.1",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "nodemon":"^3.0.3"
+}
+}
